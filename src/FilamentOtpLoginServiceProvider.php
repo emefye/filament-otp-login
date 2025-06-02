@@ -1,8 +1,8 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin;
+namespace Emefye\FilamentOtpLogin;
 
-use Afsakar\FilamentOtpLogin\Commands\PruneOtpCodes;
+use Emefye\FilamentOtpLogin\Commands\PruneOtpCodes;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -27,7 +27,7 @@ class FilamentOtpLoginServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     ->publishMigrations()
                     ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('afsakar/filament-otp-login');
+                    ->askToStarRepoOnGitHub('emefye/filament-otp-login');
             });
 
         $configFileName = $package->shortName();
@@ -58,7 +58,7 @@ class FilamentOtpLoginServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'afsakar/filament-otp-login';
+        return 'emefye/filament-otp-login';
     }
 
     /**

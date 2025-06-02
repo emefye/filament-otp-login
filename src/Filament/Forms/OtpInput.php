@@ -1,6 +1,6 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin\Filament\Forms;
+namespace Emefye\FilamentOtpLogin\Filament\Forms;
 
 use Filament\Forms;
 

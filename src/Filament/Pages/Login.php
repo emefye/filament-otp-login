@@ -1,11 +1,11 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin\Filament\Pages;
+namespace Emefye\FilamentOtpLogin\Filament\Pages;
 
-use Afsakar\FilamentOtpLogin\Filament\Forms\OtpInput;
-use Afsakar\FilamentOtpLogin\Models\Contracts\CanLoginDirectly;
-use Afsakar\FilamentOtpLogin\Models\OtpCode;
-use Afsakar\FilamentOtpLogin\Notifications\SendOtpCode;
+use Emefye\FilamentOtpLogin\Filament\Forms\OtpInput;
+use Emefye\FilamentOtpLogin\Models\Contracts\CanLoginDirectly;
+use Emefye\FilamentOtpLogin\Models\OtpCode;
+use Emefye\FilamentOtpLogin\Notifications\SendOtpCode;
 use DanHarrin\LivewireRateLimiting\Exceptions\TooManyRequestsException;
 use DanHarrin\LivewireRateLimiting\WithRateLimiting;
 use Filament\Actions\Action;

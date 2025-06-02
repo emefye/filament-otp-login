@@ -1,8 +1,8 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin;
+namespace Emefye\FilamentOtpLogin;
 
-use Afsakar\FilamentOtpLogin\Filament\Pages\Login;
+use Emefye\FilamentOtpLogin\Filament\Pages\Login;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 

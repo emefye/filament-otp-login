@@ -1,6 +1,6 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin\Notifications;
+namespace Emefye\FilamentOtpLogin\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;

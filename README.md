@@ -1,7 +1,7 @@
 # OTP Login for FilamentPHP
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/afsakar/filament-otp-login.svg?style=flat-square)](https://packagist.org/packages/afsakar/filament-otp-login)
-[![Total Downloads](https://img.shields.io/packagist/dt/afsakar/filament-otp-login.svg?style=flat-square)](https://packagist.org/packages/afsakar/filament-otp-login)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/emefye/filament-otp-login.svg?style=flat-square)](https://packagist.org/packages/emefye/filament-otp-login)
+[![Total Downloads](https://img.shields.io/packagist/dt/emefye/filament-otp-login.svg?style=flat-square)](https://packagist.org/packages/emefye/filament-otp-login)
 
 ![Screenshot](https://banners.beyondco.de/Filament%20OTP%20Login.png?theme=light&packageManager=composer+require&packageName=afsakar%2Ffilament-otp-login&pattern=architect&style=style_1&description=Simple+OTP+Login+for+FilamentPHP&md=1&showWatermark=0&fontSize=100px&images=login)
 
@@ -13,7 +13,7 @@ This package is an OTP Login for FilamentPHP. It is a simple package that allows
 You can install the package via composer:
 
 ```bash
-composer require afsakar/filament-otp-login
+composer require emefye/filament-otp-login
 ```
 
 You can publish and run the migrations with:
@@ -47,17 +47,17 @@ return [
         'expires' => env('OTP_LOGIN_CODE_EXPIRES_SECONDS', 120), // Expiration time of the OTP code in seconds
     ],
 
-    'notification_class' => \Afsakar\FilamentOtpLogin\Notifications\SendOtpCode::class,
+    'notification_class' => \Emefye\FilamentOtpLogin\Notifications\SendOtpCode::class,
 ];
 
 ```
 
 ## Usage
 
-Just register the `Afsakar\FilamentOtpLogin\FilamentOtpLoginPlugin` plugin in the your panel provider file.
+Just register the `Emefye\FilamentOtpLogin\FilamentOtpLoginPlugin` plugin in the your panel provider file.
 
 ```php
-use Afsakar\FilamentOtpLogin\FilamentOtpLoginPlugin;
+use Emefye\FilamentOtpLogin\FilamentOtpLoginPlugin;
 
     public function panel(Panel $panel): Panel
     {
@@ -68,10 +68,10 @@ use Afsakar\FilamentOtpLogin\FilamentOtpLoginPlugin;
     }
 ```
 
-If you want to ignore specific user groups from OTP login just implement the `Afsakar\FilamentOtpLogin\Models\Contracts\CanLoginDirectly` trait in your User model.
+If you want to ignore specific user groups from OTP login just implement the `Emefye\FilamentOtpLogin\Models\Contracts\CanLoginDirectly` trait in your User model.
 
 ```php
-use Afsakar\FilamentOtpLogin\Models\Contracts\CanLoginDirectly;
+use Emefye\FilamentOtpLogin\Models\Contracts\CanLoginDirectly;
 
 class User extends Authenticatable implements CanLoginDirectly
 {
@@ -90,14 +90,14 @@ _*Note:* For medium and large scale applications, you only need to run "php arti
 
 ## Custom Login Page
 
-If you want to customize the login page, you can extend the `\Afsakar\FilamentOtpLogin\Filament\Pages\Login` page and set your custom login page to plugin in the panel provider file with `loginPage` method.
+If you want to customize the login page, you can extend the `\Emefye\FilamentOtpLogin\Filament\Pages\Login` page and set your custom login page to plugin in the panel provider file with `loginPage` method.
 
 ```php
 <?php
 
 namespace App\Filament\Pages;
 
-use Afsakar\FilamentOtpLogin\Filament\Pages\Login as OtpLogin;
+use Emefye\FilamentOtpLogin\Filament\Pages\Login as OtpLogin;
 use Illuminate\Contracts\Support\Htmlable;
 
 class OverrideLogin extends OtpLogin
@@ -124,7 +124,7 @@ use App\Filament\Pages\OverrideLogin;
 
 ## Custom Notification Class
 
-If you want to customize the notification, you can replace the `\Afsakar\FilamentOtpLogin\Notifications\SendOtpCode` with your own.
+If you want to customize the notification, you can replace the `\Emefye\FilamentOtpLogin\Notifications\SendOtpCode` with your own.
 
 ```php
 <?php

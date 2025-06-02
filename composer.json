@@ -1,21 +1,21 @@
 {
-    "name": "afsakar/filament-otp-login",
+    "name": "emefye/filament-otp-login",
     "description": "OTP Login for FilamentPHP",
     "keywords": [
-        "afsakar",
+        "emefye",
         "laravel",
         "filament-otp-login"
     ],
-    "homepage": "https://github.com/afsakar/filament-otp-login",
+    "homepage": "https://github.com/emefye/filament-otp-login",
     "support": {
-        "issues": "https://github.com/afsakar/filament-otp-login/issues",
-        "source": "https://github.com/afsakar/filament-otp-login"
+        "issues": "https://github.com/emefye/filament-otp-login/issues",
+        "source": "https://github.com/emefye/filament-otp-login"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Azad Furkan ŞAKAR",
-            "email": "afsakarr@gmail.com",
+            "name": "Muhammad Fuad Yahya",
+            "email": "fuadyahya09@gmail.com",
             "role": "Developer"
         }
     ],
@@ -39,13 +39,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Afsakar\\FilamentOtpLogin\\": "src/",
-            "Afsakar\\FilamentOtpLogin\\Database\\Factories\\": "database/factories/"
+            "Emefye\\FilamentOtpLogin\\": "src/",
+            "Emefye\\FilamentOtpLogin\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Afsakar\\FilamentOtpLogin\\Tests\\": "tests/"
+            "Emefye\\FilamentOtpLogin\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -70,10 +70,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Afsakar\\FilamentOtpLogin\\FilamentOtpLoginServiceProvider"
+                "Emefye\\FilamentOtpLogin\\FilamentOtpLoginServiceProvider"
             ],
             "aliases": {
-                "FilamentOtpLogin": "Afsakar\\FilamentOtpLogin\\Facades\\FilamentOtpLogin"
+                "FilamentOtpLogin": "Emefye\\FilamentOtpLogin\\Facades\\FilamentOtpLogin"
             }
         }
     },

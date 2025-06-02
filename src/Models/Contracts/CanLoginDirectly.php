@@ -1,6 +1,6 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin\Models\Contracts;
+namespace Emefye\FilamentOtpLogin\Models\Contracts;
 
 interface CanLoginDirectly
 {

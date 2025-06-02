@@ -1,6 +1,6 @@
 <?php
 
-namespace Afsakar\FilamentOtpLogin\Models;
+namespace Emefye\FilamentOtpLogin\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\MassPrunable;
